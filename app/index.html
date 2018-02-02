@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="rockPaperScissors">
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-
+  <ui-view></ui-view>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!-- AngularUI Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA_WR-Huxz2pJCx0LxlnIHKj6pRDzqxutA",
+        authDomain: "rock-paper-scissors-867b0.firebaseapp.com",
+        databaseURL: "https://rock-paper-scissors-867b0.firebaseio.com",
+        projectId: "rock-paper-scissors-867b0",
+        storageBucket: "rock-paper-scissors-867b0.appspot.com",
+        messagingSenderId: "296397552317"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/controllers/LeaderCtrl.js"></script>
+    <script src="/scripts/services/User.js"></script>
 </body>
 </html>

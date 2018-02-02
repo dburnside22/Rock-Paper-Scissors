@@ -1,0 +1,91 @@
+body{
+  font-family: 'Crimson Text', serif;
+  color: navy;
+}
+
+
+.container-fluid{
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.header{
+  background-color: lightblue;
+  padding: 2%;
+}
+
+.header h1{
+  text-decoration: bold;
+  font-size: 45px;
+  text-shadow: .5px black;
+}
+
+.header p{
+  margin-bottom: 0;
+}
+
+.header a{
+  text-decoration: none;
+  color: navy;
+}
+
+.header-description{
+  font-size: 20px;
+}
+
+.the-score{
+  text-decoration: bold;
+}
+
+.player-buttons button{
+  background-color: lightgreen;
+  padding: 18%;
+  font-size: 30px;
+  width: 90%;
+  margin: 5px 0 0 0;
+}
+
+.player-buttons button:focus{
+  display: none;
+}
+
+.pick-titles{
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+.the-result{
+  font-size: 30px;
+}
+
+.the-picks p{
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 2.5%;
+  font-size: 16px;
+}
+
+.the-leaderboard{
+  margin: 15% 0 0 7%;
+}
+
+.leader-header{
+  margin-bottom: 20px;
+}
+
+.leader-header a{
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+table, th, td {
+  text-align: center;
+}
+
+.table-title {
+  font-size: 20px;
+}
+
+.table-values {
+  font-size: 16px;
+}
